@@ -109,7 +109,6 @@ for (var counter = 0; counter < myVeggies.length; counter++) {
 
 // 6.4 Loop again using a "for in"
 
-var myVeggies = ['salad', 'carrots', 'tomatoes', 'broccoli', 'cauliflower']
 for (var veggie in myVeggies) {
   console.log(veggie);
 };
