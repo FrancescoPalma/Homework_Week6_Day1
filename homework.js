@@ -113,7 +113,7 @@ for (var veggie in myVeggies) {
   console.log(veggie);
 };
 
-// Section 7 - Not done
+// Section 7 
 
 var accounts = [
   { name: 'jay',
@@ -139,13 +139,81 @@ var accounts = [
 ]
 
 // 7.1 Calculate the total cash in accounts
+
+var totalAmount = function(array) {
+  var x, total = 0;
+  for (x = 0; x < array.length; x++) {
+    total += array[x]['amount'];
+  }
+  return total;
+}
+console.log(totalAmount(accounts));
+
 // 7.2 Find the name of the account with the largest balance
+
+var memo = 0;
+var name;
+for (account of accounts) {
+  if (account.amount > memo) {
+    name = account.name;
+    memo = account.amount;
+  }
+}
+console.log(name);
+
 // 7.3 Find the name of the account with the smallest balance
+
+var memo = accounts[0].amount;
+var name = accounts[0].name;
+for (account of accounts) {
+  if (account.amount < memo) {
+    name = account.name;
+    memo = account.amount;
+  }
+}
+console.log(name);
+
 // 7.4 Calculate the average bank account value
+
+console.log(totalAmount(accounts)/accounts.length);
+
 // 7.5 Find the value of marcs bank account
+
+var findValuebyName = function(hash, name) {
+  for (var x of hash) {
+    if (x.name === name) {
+      return x.amount;
+    }
+  }
+}
+console.log(findValuebyName(accounts, 'marc'));
+
 // 7.6 Find the holder of the largest bank account
+
+
+
 // 7.7 Calculate the total cash in business accounts
+
+var findBusinessTotal = function() {
+  var total = 0;
+  for (account of accounts) {
+    if (account.type === 'business') {
+      total += account.amount;
+    }
+  }
+  return total;
+}
+
 // 7.8 Find the largest personal account owner
 
+var biggestPersonalAccount = account[0];
+for (var account of accounts) {
+  if (account.amount > biggestPersonalAccount.amount && account.type === 'personal') {
+    biggestPersonalAccount = account;
+  }
+}
+console.log(biggestPersonalAccount.name)
+
 // Section 8 - Not done
+
 // Assign a variable myPerson to a hash, giving them a name, height favourate food
