@@ -69,6 +69,7 @@ var firstElementInArray = animals[0];
 // 5.2. Assign the last element to a variable
 
 var lastElementInArray = animals[3];
+var lastElementInArray = animals.slice(-1)[0]; // without cheating
 
 // 5.3. Assign the length of an array to a variable
 
