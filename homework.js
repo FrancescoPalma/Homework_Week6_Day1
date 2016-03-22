@@ -85,8 +85,7 @@ animals.unshift("elephant");
 
 // 5.6. Assign the index of hedgehog to a variable
 
-var hedgehogIndex = animals[1]; // If we consider the array as to Section 5
-var hedgehogIndex = animals[2]; // If we consider the array as to Section 5.6. 
+var hedgehogIndex = animals.indexOf('hedgehog');  
 
 // Section 6
 
