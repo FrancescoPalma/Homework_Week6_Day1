@@ -5,8 +5,8 @@
 1; // Number
 "cat"; // String
 true; // Boolean
-[]; // Array
-{}; // Hash
+[]; // Array - Object
+{}; // Hash - Object
 1.1; // Number
 undefined; // Undefined
 
@@ -40,15 +40,11 @@ var myString = 'My name is Francesco';
 
 // 3.3 Assign a variable that is a boolean
 
-var myBoolean = 12/12 === 24/24;
+var myBoolean = true;
 
 // 3.4 Assign a variable that is an object
 
-var myPlayer = {
-  name: 'Jeremy Vardy',
-  role: 'Forward',
-  team: 'Leicester'
-};
+var myPlayer = [];
 
 // Section 4
 
