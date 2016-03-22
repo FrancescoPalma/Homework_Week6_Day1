@@ -95,7 +95,6 @@ var myVeggies = ['salad', 'carrots', 'tomatoes', 'broccoli', 'cauliflower'];
 
 // 6.2 Loop over the array and write to the console using a "while"
 
-var myVeggies = ['salad', 'carrots', 'tomatoes', 'broccoli', 'cauliflower']
 var i = 0;
 while (i < myVeggies.length) {
   console.log(myVeggies[i]);
@@ -104,8 +103,6 @@ while (i < myVeggies.length) {
 
 // 6.3 Loop again using a "for" with a counter
 
-var myVeggies = ['salad', 'carrots', 'tomatoes', 'broccoli', 'cauliflower']
-var counter = 0;
 for (var counter = 0; counter < myVeggies.length; counter++) {
   console.log(myVeggies[counter]);
 };
